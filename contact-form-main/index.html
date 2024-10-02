@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pop-up" id="pop-up">
+    <div id="pop-up1"><i class="fa-solid fa-check"></i><strong>Message Sent! </strong></div>
+    <div class="thanks" id="thanks">Thaks for completing the form. We'll tuch soon!</div>
+  </div>
+
+  <div class="container">
+
+    <h2>Contact Us </h2>
+    <div class="form-group">
+      
+      <div class="form-name">
+        <div> 
+          <label for="first-name">First Name <span>*</span></label>
+          <input type="text" id="first-name">
+          <span id="first-nameError" class="error">This filed is reuired</span>
+        </div>
+
+        <div>
+          <label for="last-name">Last Name <span>*</span></label>
+          <input type="text" id="last-name">
+          <span id="last-nameError" class="error">This filed is reuired</span>
+        </div>
+      </div>
+
+      <div class="email-address">
+        <label for="email">Email Address <span>*</span></label>
+        <input type="email" id="email">
+        <span id="emailError" class="error">Please enter a valid email address</span>
+      </div>
+
+    </div>
+
+
+    <label for="query-type">Query Type <span>*</span></label>
+    <div class="query">
+      <div class="radio-button">
+        <input type="radio" id="query" name="query">
+        <div>General Enquiry</div>
+      </div>
+
+      <div class="radio-button">
+        <input type="radio" id="query" name="query">
+        <div>Support Request</div>
+      </div>
+    </div>
+    <span id="queryError" class="error">Please select a query type</span>
+
+    <div class="text-area">
+      <label for="message">Message <span id="bintang">*</span></label>
+      <textarea name="message" id="message"></textarea>
+      <span id="messageError" class="error">This field is quired</span>
+    </div>
+
+    <div id="checkForm">
+      <div class="check-button">
+        <input type="checkbox" id="check" name="check">
+        <div>I consent to being contacted by the team <span>*</span> </div>
+      </div>
+      <span id="checkError" class="error">To submit this form, please consent being contacted</span>
+
+    </div>
+
+    <input type="submit" id="submit" value="Submit"></input>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Sabda Gusti S</a>.
+  </div>
+
+</body>
+<script src="index.js"></script>
+
+
+</html>
